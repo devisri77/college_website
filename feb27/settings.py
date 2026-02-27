@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-80w#*7_r69axv1_ivch)1$-i)abi1q$@0i9h#s%omcyva4!_p3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,10 +125,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 ]
     STATIC_ROOT='/home/devisri77/college_website/staticfiles'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
